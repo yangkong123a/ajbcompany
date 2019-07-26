@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+    <!-- implementor属性里写的是bean的id,但是要以#开头,特定写法 -->
+    <!--<jaxws:endpoint implementor="#weatherService" address="/weather"/>-->
+    <!-- 发布服务 -->
+    <bean id="weatherService" class="webServiceDemo.WeatherServiceImpl"></bean>
+    <jaxws:server address="/weatherService" serviceClass="webServiceDemo.WeatherService" >
+        <jaxws:serviceBean>
+            <ref bean="weatherService"/>
+        </jaxws:serviceBean>
+    </jaxws:server>
+</beans>

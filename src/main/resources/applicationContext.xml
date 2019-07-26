@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 导入SpringMVC配置文件 -->
+    <import resource="spring-mvc.xml"/>
+    <import resource="classpath:conf/app-mulProfile.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
+    <import resource="spring-cxf.xml"/>
+
+    <!-- 加载资源文件 -->
+    <!--<context:property-placeholder location="classpath:properties/app-test.properties" />-->
+
+    <!-- 引入JavaConfig -->
+    <!--<bean class="configuration.CDplayerConfig"/>
+    <bean class="configuration.AOPTestConfig"/>-->
+
+    <!-- 创建bean -->
+    <!--<bean id="cd" class="soundSystem.Stgpeppers"/>
+    <bean id="cdPlayer" class="soundSystem.CDPlayer">
+        <constructor-arg ref="cd"/>
+    </bean>-->
+
+    <!--<bean id="cd" class="soundSystem.Stgpeppers">
+        <property name="title" value="${compactDisk.title}"></property>
+    </bean>-->
+
+</beans>
