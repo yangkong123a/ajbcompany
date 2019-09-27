@@ -20,7 +20,7 @@ public class MyTest {
                 al.add("2222");
                 al.add("3333");
                 al.add("4444");
-                al.add("2222");
+                al.add("22226666");
                 for (String ls : al){
             System.out.println(ls);
         }
