@@ -18,7 +18,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <!-- spring版本 -->
-    <spring.framework.version>5.2.3.RELEASE</spring.framework.version>
+    <spring.framework.version>5.3.18</spring.framework.version>
     <cxf.version>3.2.9</cxf.version>
   </properties>
 
